@@ -25,6 +25,7 @@ include $(CLEAR_VARS)
 
 libOmxEvrcEnc-inc       := $(LOCAL_PATH)/inc
 libOmxEvrcEnc-inc       += $(TARGET_OUT_HEADERS)/mm-core/omxcore
+libOmxEvrcEnc-inc       += hardware/qcom/media-legacy/mm-core/inc
 
 LOCAL_MODULE            := libOmxEvrcEnc
 LOCAL_MODULE_TAGS       := optional
@@ -50,6 +51,7 @@ include $(CLEAR_VARS)
 mm-evrc-enc-test-inc    := $(LOCAL_PATH)/inc
 mm-evrc-enc-test-inc    += $(LOCAL_PATH)/test
 mm-evrc-enc-test-inc    += $(TARGET_OUT_HEADERS)/mm-core/omxcore
+mm-evrc-enc-test-inc    += hardware/qcom/media-legacy/mm-core/inc
 ifeq ($(strip $(TARGET_USES_QCOM_MM_AUDIO)),true)
 mm-evrc-enc-test-inc     += $(TARGET_OUT_HEADERS)/mm-audio/audio-alsa 
 endif

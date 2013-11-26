@@ -24,6 +24,7 @@ include $(CLEAR_VARS)
 
 libOmxAacEnc-inc       := $(LOCAL_PATH)/inc
 libOmxAacEnc-inc       += $(TARGET_OUT_HEADERS)/mm-core/omxcore
+libOmxAacEnc-inc       += hardware/qcom/media-legacy/mm-core/inc
 
 LOCAL_MODULE            := libOmxAacEnc
 LOCAL_MODULE_TAGS       := optional
@@ -52,6 +53,7 @@ ifeq ($(strip $(TARGET_USES_QCOM_MM_AUDIO)),true)
 mm-aac-enc-test-inc    += $(TARGET_OUT_HEADERS)/mm-audio/audio-alsa 
 endif
 mm-aac-enc-test-inc    += $(TARGET_OUT_HEADERS)/mm-core/omxcore
+mm-aac-enc-test-inc    += hardware/qcom/media-legacy/mm-core/inc
 
 LOCAL_MODULE            := mm-aenc-omxaac-test
 LOCAL_MODULE_TAGS       := optional

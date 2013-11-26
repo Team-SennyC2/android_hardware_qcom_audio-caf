@@ -25,6 +25,7 @@ include $(CLEAR_VARS)
 
 libOmxQcelp13Enc-inc       := $(LOCAL_PATH)/inc
 libOmxQcelp13Enc-inc       += $(TARGET_OUT_HEADERS)/mm-core/omxcore
+libOmxQcelp13Enc-inc       += hardware/qcom/media-legacy/mm-core/inc
 
 LOCAL_MODULE            := libOmxQcelp13Enc
 LOCAL_MODULE_TAGS       := optional
@@ -53,6 +54,7 @@ mm-qcelp13-enc-test-inc    := $(LOCAL_PATH)/inc
 mm-qcelp13-enc-test-inc    += $(LOCAL_PATH)/test
 
 mm-qcelp13-enc-test-inc    += $(TARGET_OUT_HEADERS)/mm-core/omxcore
+mm-qcelp13-enc-test-inc    += hardware/qcom/media-legacy/mm-core/inc
 ifeq ($(strip $(TARGET_USES_QCOM_MM_AUDIO)),true)
 mm-qcelp13-enc-test-inc    += $(TARGET_OUT_HEADERS)/mm-audio/audio-alsa
 endif

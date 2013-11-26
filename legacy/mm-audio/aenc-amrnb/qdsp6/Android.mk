@@ -25,6 +25,7 @@ include $(CLEAR_VARS)
 
 libOmxAmrEnc-inc       := $(LOCAL_PATH)/inc
 libOmxAmrEnc-inc       += $(TARGET_OUT_HEADERS)/mm-core/omxcore
+libOmxAmrEnc-inc       += hardware/qcom/media-legacy/mm-core/inc
 
 LOCAL_MODULE            := libOmxAmrEnc
 LOCAL_MODULE_TAGS       := optional
@@ -51,6 +52,7 @@ mm-amr-enc-test-inc    := $(LOCAL_PATH)/inc
 mm-amr-enc-test-inc    += $(LOCAL_PATH)/test
 
 mm-amr-enc-test-inc    += $(TARGET_OUT_HEADERS)/mm-core/omxcore
+mm-amr-enc-test-inc    += hardware/qcom/media-legacy/mm-core/inc
 ifeq ($(strip $(TARGET_USES_QCOM_MM_AUDIO)),true)
 mm-amr-enc-test-inc    += $(TARGET_OUT_HEADERS)/mm-audio/audio-alsa 
 endif
